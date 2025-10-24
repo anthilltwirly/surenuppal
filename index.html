@@ -85,15 +85,38 @@
     margin-bottom: 20px;
 }
         .description {
+ .description-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0.75cm;
+    max-height: 220px;
+}
+
+.description {
     font-size: 14px;
     color: #f4f1f1;
     line-height: 1.6;
-    padding-left: 0.75cm;
-    max-height: 220px;
-    overflow: hidden;
+}
+
+.personal-links {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.personal-links a {
+    color: #ff9900;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.personal-links a:hover {
+    color: #f4f1f1;
+    transform: translateX(5px);
 }
         .contact {
             margin: 10px 0;
@@ -252,12 +275,19 @@
     <div class="card">
         <div class="info">
             <h1 class="name">Suren Uppal</h1>
-            <div class="image-qr-container">
-                    <img src="https://raw.githubusercontent.com/anthilltwirly/bizcard_suren/main/suren.jpeg" alt="Suren Uppal" style="width: 200px; height: 220px; object-fit: cover;">
-    <div class="description">
-        Suren Uppal is a veteran advocate at the Indian Supreme Court, and the foremost experts when it comes to corporate law and policy framework, globally. He has been an advisor to government agencies, industrialists and some of the most revered business houses in the world over the last 20 years across the European Union, Asia and the Americas. He is also an alumnus of London School of Economics, a serial entrepreneur, an avid yoga enthusiast, and the Founder-CEO of SUO Global.
+<div class="image-qr-container">
+    <img src="https://raw.githubusercontent.com/anthilltwirly/bizcard_suren/main/suren.jpeg" alt="Suren Uppal" style="width: 200px; height: 220px; object-fit: cover;">
+    <div class="description-container">
+        <div class="description">
+            Suren Uppal is a veteran advocate at the Indian Supreme Court, and the foremost experts when it comes to corporate law and policy framework, globally. He has been an advisor to government agencies, industrialists and some of the most revered business houses in the world. He is a serial entrepreneur, an avid yoga enthusiast, and the Founder-CEO of SUO Global.
+        </div>
+        <div class="personal-links">
+            <a href="https://surenuppal.com" target="_blank">My Portfolio</a>
+            <a href="https://linkedin.com/in/surenuppal" target="_blank">My LinkedIn Profile</a>
+        </div>
     </div>
 </div>
+
             
             <div class="contact">
                 <p><i class="fas fa-phone"></i>+351-937036477</p>
