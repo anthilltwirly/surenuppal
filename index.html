@@ -78,13 +78,23 @@
             position: relative;
         }
 
-        .image-qr-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
+     .image-qr-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+        .description {
+    flex: 1;
+    font-size: 14px;
+    color: #f4f1f1;
+    line-height: 1.6;
+    padding-left: 0.75cm;
+    max-height: 220px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
         .contact {
             margin: 10px 0;
             font-size: 15px;
@@ -230,9 +240,11 @@
         <div class="info">
             <h1 class="name">Suren Uppal</h1>
             <div class="image-qr-container">
-                <img src="https://raw.githubusercontent.com/anthilltwirly/surenuppal/main/suren.jpeg" alt="Suren Uppal" style="width: 200px; height: auto;">
-         
-            </div>
+                    <img src="https://raw.githubusercontent.com/anthilltwirly/bizcard_suren/main/suren.jpeg" alt="Suren Uppal" style="width: 200px; height: 220px; object-fit: cover;">
+    <div class="description">
+        Suren Uppal is a veteran advocate at the Indian Supreme Court, and the foremost experts when it comes to corporate law and policy framework, globally. He has been an advisor to government agencies, industrialists and some of the most revered business houses in the world. He is a serial entrepreneur, an avid yoga enthusiast, and the Founder-CEO of SUO Global.
+    </div>
+</div>
             
             <div class="contact">
                 <p><i class="fas fa-phone"></i>+351-937036477</p>
