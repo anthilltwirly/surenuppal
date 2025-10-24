@@ -208,12 +208,22 @@
             text-decoration: none;
             transition: all 0.4s ease;
             transform-origin: center;
+            display: flex;
+            flex-direction: column
+            align-items: center;
+            gap: 8px;
         }
-        
+        .social a span {
+            font-size: 12px;
+            color: #ff9900;
+        }
         .social a:hover {
-            transform: scale(1.3) rotate(360deg);
-            color: #f1f7f8;
+            transform: scale(1.1);
+            color: #f1f7f8
             text-shadow: 0 0 15px #ff9900;
+        }
+        .social a:hover span {
+            color: #f1f7f8
         }
         
         #qrcode {
@@ -339,7 +349,8 @@
             
             <div class="social">
                 <a href="https://linkedin.com/company/suoglobal" target="_blank">
-                    <i class="fab fa-linkedin fa-2x" title="SUO Global"></i>
+                    <i class="fab fa-linkedin fa-2x"></i>
+                    <span>="SUO Global"</span>
                 </a>
                 <a href="https://linkedin.com/company/suo-law-offices" target="_blank">
                     <i class="fab fa-linkedin fa-2x" title="SUO Law Offices"></i>
